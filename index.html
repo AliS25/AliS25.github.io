@@ -1,0 +1,103 @@
+<!--Ali Sbeih, Test-Website-->
+
+
+<!--doctype. It is a required preamble.-->
+<!DOCTYPE html>
+
+<!--This element wraps all the content on the entire page.-->
+<html>
+
+<!--This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing-->
+  <head>    
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!--Adds chosen font from Google Fonts. This code links the page 
+    to a style sheet that loads the Fascinate font family with the webpage.-->
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+
+    <!--To make the code work, we apply the CSS to the HTML document with this line.-->
+    <link href="styles/style.css" rel="stylesheet">
+
+<!--This element sets the character set your document should use to UTF-8 
+  which includes most characters from the vast majority of written languages.-->
+    <meta charset="utf-8">
+
+    <!--This sets the title of your page, which appears in the browser tab the page is loaded in.-->
+    <title>My test page</title>
+
+        <!--applies the JavaScript to the page, so it can have an effect on the HTML-->
+        <script src="scripts/main.js" defer></script>
+  </head>
+<!--This contains all the content that you want to show to web users when they visit your page.-->
+  <body>
+
+<form>
+  <input type="search", name="q", placeholder="Search Query">
+  <input type="submit", value="go!">
+</form>
+
+<!--Heading element. HTML contains 6 heading levels, <h1> - <h6>-->
+    <h1> Cool Wallpaper </h1>
+      <figure>
+<!--The line below inserts an image into the page. We need to tell the HTML where the image is. 
+  The image is inside the images directory, which is in the same directory as index.html. 
+  To walk down the file structure from index.html to our image, the file path we'd need 
+  is images/your-image-filename.-->
+<!--Some general rules for file paths:
+- To link to a target file in the same directory as the invoking HTML file, just use the filename, my-image.jpg.
+To reference a file in a subdirectory, write the directory name in front of the path, plus a forward slash, subdirectory/my-image.jpg.
+To link to a target file in the directory above the invoking HTML file, write two dots, ../my-image.jpg.
+You can combine these as much as you like, for example ../subdirectory/another-subdirectory/my-image.jpg.-->
+<!--img element has no closing tag or content because its purpose is to 
+embed an image in the HTML page in the place it appears not affect content.-->
+<!--embeds the  image via the src (source) attribute. Tbe alt (alternative) 
+attribute specifies descriptive text for users who cannot see the image.-->
+
+<img src="images/websiteone.jpg" alt="My test image">
+
+<figcaption>Click on the image</figcaption>
+</figure>
+<!--we specify that this line is a paragraph by enclosing it in paragraph tags:-->
+<!--This is an element it consists of the opening tag, content, and closing tag respectively-->
+    <p>This is my first website!</p>
+
+<!--Elements can also have attributes which contain extra information that you don't want in the content
+  An attribute consists of an attribute name and an attribute value. Here, it's class and note respecitvely. 
+  The class attribute allows you to give the element a non-unique identifier 
+  that can be used to target it and any other elements with the same class value with style information and other things.-->
+<p class="note">Colors are important</p>
+
+    <p>next up is a list:</p>
+
+    <!-- This is an ordered list-->
+    <ol>
+      <!--Each item inside the lists is put inside an <li> (list item) element.-->
+        <li>Hue</li>
+        <li>Saturation</li>
+        <li>Lightness</li>
+    </ol>
+
+    <!--This is an unordered list-->
+    <ul>
+        <li id="red">Red</li>
+        <li id="green">Green</li>
+        <li id="blue">Blue</li>
+    </ul>
+
+    <p>List is <strong>done!</strong></p>
+    <!--To add a link, we need to use element <a> and give it an href attribute with the web address as tbe value of this attribute-->
+    <a href="https://theuselessweb.com/" title="there are some really cool websites" target="_blank">Check out this website that takes you to fun(useless) websites!</a>
+
+    <p>Don't forget to check out my <a href="home.html">homepage!</a></p>
+    <button>Change user</button>
+
+
+    <hr>
+    <footer>
+      <p>©Copyright 2022 by nobody. All rights reversed.</p>
+    </footer>
+
+  </body>
+</html>

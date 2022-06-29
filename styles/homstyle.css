@@ -90,6 +90,7 @@ table {
 /* caption */
 
 caption {
+  text-decoration: underline wavy hotpink;
   padding: 20px;
   font-style: italic;
   caption-side: bottom;
@@ -103,6 +104,7 @@ caption {
 
   
 h1 {
+  width: fit-content;
     color: hotpink;
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;

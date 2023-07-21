@@ -15,7 +15,7 @@ main p {
       padding:10px;
       margin: 20px;
       border-radius: 1em;
-      flex: 1;
+      flex-basis: calc(20% - 60px); /* Set the width of each item to one-third minus any spacing  */      
     }
 img{
   width: 100%;
@@ -108,6 +108,7 @@ body {
     flex:30%;
       align-items:flex-start;
       justify-content: center;
+      
  
   }
   

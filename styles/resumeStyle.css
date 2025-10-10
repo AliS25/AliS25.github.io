@@ -84,3 +84,31 @@ iframe{
     padding-bottom: 10vh;    /* Footer height */
     margin: auto;
   }
+
+@media (max-width: 600px) {
+  body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+  }
+  #navList {
+    width: 100%;
+    padding: 0;
+  }
+  .nav {
+    float: none;
+    width: 100%;
+  }
+  .nav a {
+    padding: 10px;
+    font-size: 1em;
+  }
+  iframe {
+    width: 95vw;
+    height: 60vw;
+    padding: 5px;
+  }
+  main {
+    padding: 5px;
+  }
+}

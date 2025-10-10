@@ -224,13 +224,35 @@ margin-bottom:1em;
     max-width: 90vw;
     margin: auto;
   }
-  .content, h2 {
-    width: 100%;
+  .content {
+    box-sizing: border-box;
+    width: 95vw;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+  }
+  h2 {
+    box-sizing: border-box;
+    width: 95vw;
+    max-width: 100%;
     padding: 10px;
     font-size: 1em;
+    margin: 0 auto 10px auto;
+    word-break: break-word;
   }
   div p, #contact {
+    box-sizing: border-box;
     width: 95vw;
+    max-width: 100%;
     padding: 10px;
+    margin: 0 auto;
+    border-radius: 1em;
+    list-style-position: inside;
+  }
+  #contact li {
+    padding-left: 0;
+    margin-left: 0;
+    word-break: break-word;
   }
 }
